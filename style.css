@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    background: url(./images/bg-pattern-bottom.svg) right bottom, url(./images/bg-pattern-top.svg) left top;
+}
+
+
+.person__age {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+.person__city {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+.stats--amount {
+    font-weight: 700;
+}
