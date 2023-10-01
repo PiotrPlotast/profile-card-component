@@ -8,8 +8,10 @@
 }
 
 body {
-    background: url(./images/bg-pattern-bottom.svg) no-repeat, url(./images/bg-pattern-top.svg) no-repeat;
+    background: url(./images/bg-pattern-top.svg) top left no-repeat, url(./images/bg-pattern-bottom.svg) bottom right no-repeat;
     background-color: var(--bg-color);
+    background-position: left -250px top -250px, right -250px bottom -250px;
+    background-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,8 +22,8 @@ body {
     background-color: hsl(0, 100%, 100%);
     border-radius: 15px;
     overflow: hidden;
-    max-height: 24rem;
-    max-width: 20rem;
+    max-height: 384px;
+    max-width: 370px;
 }
 
 .person {
@@ -82,4 +84,16 @@ body {
     letter-spacing: 2px;
     margin-top: 0.3rem;
     color: var(--age-city-stats-color);
+}
+
+@media (min-width: 700px) {
+    body {
+        background-position: left -35rem top -35rem, right -35rem bottom -35rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    body {
+        background-position: left -65rem top -65rem, right -65rem bottom -65rem;
+    }
 }
